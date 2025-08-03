@@ -24,16 +24,16 @@ I developed a flexible form generation engine that is hieghly readable for anyon
 
 🔥 #Key Advantages
 
-Full Branding Customization
+- Full Branding Customization
 Apply colors, fonts, logos, and layout styles through the JSON configuration.
 
-Flexible Step and Field Control
+- Flexible Step and Field Control
 Define unlimited steps and fields, with support for conditional visibility, validation, and field types.
 
-A/B Testing Support
+- A/B Testing Support
 Test different versions of a form with variant schemas to optimize conversions and user experience.
 
-Rapid Deployment for New Clients
+- Rapid Deployment for New Clients
 Generate complete, multi-step forms in minutes by providing one JSON file per company—no development time required.
 
 🚀 Why This Matters
