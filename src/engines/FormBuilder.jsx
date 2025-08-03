@@ -3,7 +3,7 @@ import { InputField } from "../components/reusableComponents/fields/InputField";
 import SelectField from "@/components/reusableComponents/fields/SelectFIeld";
 import DateInputField from "@/components/reusableComponents/fields/DateInput";
 
-export const FormSteper = ({ fields, formData, onChange }) => {
+export const FormBuilder = ({ fields, formData, onChange }) => {
   return (
     <div className="space-y-4">
       {fields.map((field) => {
@@ -46,9 +46,11 @@ export const FormSteper = ({ fields, formData, onChange }) => {
             return (
               <div key={field.name}>
                 <DateInputField
+                  name={field.name}
                   label={field.label}
-                  checked={formData[field.name]}
-                  onChange={(e) => onChange(field.name, e.target.checked)}
+                  value={formData[field.name] || ''}
+                  onChange={(e) => onChange(field.name, e.target.value)}
+                  required={field.required}
                 />
               </div>
             );
