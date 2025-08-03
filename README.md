@@ -55,5 +55,3 @@ It’s a robust foundation for building a white-label, dynamic form system suite
 - Submit the JSON schema action will create a new form with A/B testing for new company with branding and full details then save them in the backend.
 
 - No need for any intervention from the development team.
-
-
