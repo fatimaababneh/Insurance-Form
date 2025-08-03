@@ -1,28 +1,21 @@
 'use client';
-import React, { useState } from 'react';
-import { FormSteper } from '@/engines/FormBuilder';
+import React, { useEffect, useState } from 'react';
+import { FormBuilder } from '@/engines/FormBuilder';
 import { AlqudsInsuranceCompany } from '@/schemas/companiesSchema.json';
 
 export const InsuranceFormGenerator = ({ formSchema, selectedSample }) => {
   const [formData, setFormData] = useState({});
   const [currentStep, setCurrentStep] = useState(0);
-  console.log(AlqudsInsuranceCompany, 'companiesSchema');
+  console.log(AlqudsInsuranceCompany, selectedSample, 'companiesSchema');
   const step = AlqudsInsuranceCompany[selectedSample].steps[currentStep];
   console.log(step, 'steppp');
 
+  useEffect(()=>{
+  setFormData({})
+  setCurrentStep(0)
+  },[selectedSample])
   const handleFieldChange = (name, value) => {
     setFormData((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const goToNext = () => {
-    if (currentStep < formSchema.steps.length - 1) {
-    }
-  };
-
-  const goToPrevious = () => {
-    if (currentStep > 0) {
-      setCurrentStep((prev) => prev - 1);
-    }
   };
 
   return (
@@ -33,8 +26,8 @@ export const InsuranceFormGenerator = ({ formSchema, selectedSample }) => {
 
       {step && (
         <div className="bg-white shadow-md border border-gray-200 p-6 rounded-xl">
-          <h2 className="text-xl font-semibold text-purple-800 mb-4">{step.label}</h2>
-          <FormSteper
+          <h2 className="text-xl font-semibold text-purple-800 mb-4 min-w-[6rem]">{step.label}</h2>
+          <FormBuilder
             key={currentStep}
             fields={step.fields}
             formData={formData}

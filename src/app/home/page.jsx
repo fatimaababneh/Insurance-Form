@@ -25,7 +25,7 @@ export default function HomePage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-50 py-12 px-6">
+    <div className="min-h-[20vh] bg-gradient-to-br from-blue-50 to-purple-50 py-12 px-6">
       <div className="max-w-2xl mx-auto bg-white rounded-xl shadow-md p-8 space-y-6 border border-gray-200">
         <h1 className="text-3xl font-bold text-center text-blue-900">
           Insurance Form Previewer
