@@ -1,4 +1,5 @@
 📄 #Insurance Dynamic Form Engine
+
 This application is designed as a dynamic and reusable form engine driven entirely by JSON schemas. It allows the creation of highly customizable multi-step forms that can adapt to any company’s requirements without the need to modify any core logic or UI components.
 
 Built with Next.js (App Router) and styled using Tailwind CSS, the solution ensures scalability, maintainability, and easy customization. All form configurations fields, step structure, styling, and branding are defined in a single JSON file, enabling fast integration and seamless updates with just few minustes rather than build every thing from scratch again or make any copies.
