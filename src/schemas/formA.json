@@ -1,0 +1,65 @@
+{
+  "title": "Insurance Form A",
+  "steps": [
+    {
+      "id": "personalInfo",
+      "stepId": "step1",
+      "label": "Personal Information",
+      "fields": [
+        {
+          "type": "text",
+          "name": "firstName",
+          "label": "First Name",
+          "required": true
+        },
+        {
+          "type": "text",
+          "name": "lastName",
+          "label": "Last Name",
+          "required": true
+        },
+        {
+          "type": "date",
+          "name": "BirthOfDate",
+          "label": "Birth Of Date"
+        }
+      ]
+    },
+    {
+      "id": "travelInfo",
+      "stepId": "step2",
+      "label": "Travel Details",
+      "fields": [
+        {
+          "type": "date",
+          "name": "expectedDate",
+          "label": "Expected Date"
+        },
+        {
+          "type": "text",
+          "name": "companyName",
+          "label": "Company Name",
+          "required": true
+        }
+      ]
+    },
+    {
+      "id": "summary",
+      "stepId": "step3",
+      "label": "Summary",
+      "fields": [
+        {
+          "type": "text",
+          "name": "note",
+          "label": "Note"
+        },
+        {
+          "type": "checkbox",
+          "name": "agreeStep1",
+          "label": "I agree terms and conditions",
+          "required": true
+        }
+      ]
+    }
+  ]
+}

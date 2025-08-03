@@ -1,0 +1,177 @@
+{
+    "AlqudsInsuranceCompany":{
+        "sampleA":{
+            "title": "Alquds Insurance Form A",
+            "steps": [
+                {
+                "id": "personalInfo",
+                "stepId": "step1",
+                "label": "Personal Information",
+                "fields": [
+                    {
+                    "type": "text",
+                    "name": "firstName",
+                    "label": "First Name",
+                    "required": true,
+                    "style":{
+                        "color":"black"
+                    }
+                    },
+                    {
+                    "type": "text",
+                    "name": "lastName",
+                    "label": "Last Name",
+                    "required": true,
+                    "style":{
+                        "color":"black"
+                    }
+                    },
+                    {
+                    "type": "date",
+                    "name": "BirthOfDate",
+                    "label": "Birth Of Date",
+                    "style":{
+                        "color":"black"
+                    }
+                    }
+                ]
+                },
+                {
+                "id": "travelInfo",
+                "stepId": "step2",
+                "label": "Travel Details",
+                "fields": [
+                    {
+                    "type": "date",
+                    "name": "expectedDate",
+                    "label": "Expected Date",
+                    "style":{
+                        "color":"black"
+                    }
+                    },
+                    {
+                    "type": "text",
+                    "name": "companyName",
+                    "label": "Company Name",
+                    "required": true,
+                    "style":{
+                        "color":"black"
+                    }
+                    }
+                ]
+                },
+                {
+                "id": "summary",
+                "stepId": "step3",
+                "label": "Summary",
+                "fields": [
+                    {
+                    "type": "text",
+                    "name": "note",
+                    "label": "Note",
+                    "style":{
+                        "color":"black"
+                    }
+                    },
+                    {
+                    "type": "checkbox",
+                    "name": "agreeStep1",
+                    "label": "I agree terms and conditions",
+                    "required": true,
+                    "style":{
+                        "color":"black"
+                    }
+                    }
+                ]
+                }
+            ]
+            },
+            "sampleB":{
+                "title": "Alquds Insurance Form B",
+                "steps": [
+                    {
+                    "id": "travelInfo",
+                    "stepId": "step2",
+                    "label": "Travel Details",
+                    "fields": [
+                        {
+                        "type": "date",
+                        "name": "expectedDate",
+                        "label": "Expected Date",
+                        "style":{
+                        "color":"blue-400"
+                        }
+                        },
+                        {
+                        "type": "text",
+                        "name": "companyName",
+                        "label": "Company Name",
+                        "required": true,
+                        "style":{
+                        "color":"blue-400"
+                        }
+                        }
+                    ]
+                    },
+                    {
+                    "id": "personalInfo",
+                    "stepId": "step1",
+                    "label": "Personal Information",
+                    "fields": [
+                        {
+                        "type": "text",
+                        "name": "firstName",
+                        "label": "First Name",
+                        "required": true,
+                        "style":{
+                        "color":"blue-400"
+                        }
+                        },
+                        {
+                        "type": "text",
+                        "name": "lastName",
+                        "label": "Last Name",
+                        "required": true,
+                        "style":{
+                        "color":"blue-400"
+                        }
+                        },
+                        {
+                        "type": "date",
+                        "name": "BirthOfDate",
+                        "label": "Birth Of Date",
+                        "style":{
+                        "color":"blue-400"
+                        }
+                        }
+                    ]
+                    },
+                    {
+                    "id": "summary",
+                    "stepId": "step3",
+                    "label": "Summary",
+                    "fields": [
+                        {
+                        "type": "text",
+                        "name": "note",
+                        "label": "Note",
+                        "style":{
+                        "color":"blue-400"
+                        }
+                        },
+                        {
+                        "type": "checkbox",
+                        "name": "agreeStep1",
+                        "label": "I agree terms and conditions",
+                        "required": true,
+                        "style":{
+                        "color":"blue-400"
+                        }
+                        }
+                    ]
+                    }
+                ]
+            }
+        }
+
+}
